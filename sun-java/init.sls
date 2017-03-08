@@ -14,7 +14,7 @@ unpack-jdk-tarball:
   cmd.run:
     - name: curl {{ java.dl_opts }} '{{ java.source_url }}' | tar xz --no-same-owner
     - cwd: {{ java.prefix }}
-    - unless: test -d {{ java.java_real_home }}
+    - unless: test -d {{ java.java_real_home }}/bin
     - require:
       - file: {{ java.prefix }}
   alternatives.install:
