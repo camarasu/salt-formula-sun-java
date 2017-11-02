@@ -5,8 +5,8 @@
 
 {%- set default_version_name = 'jdk1.8.0_74' %}
 {%- set default_prefix       = '/usr/share/java' %}
-{%- set default_source_url   = 'https://github.com/cgeroux/packages/raw/master/jdk-8u74-linux-x64.tar.gz' %}
-{%- set default_jce_url      = 'https://github.com/cgeroux/packages/raw/master/jce_policy-8.zip' %}
+{%- set default_source_url   = 'http://206.167.181.71/cgeroux/jdk-8u74-linux-x64.tar.gz' %}
+{%- set default_jce_url      = 'http://206.167.181.71/cgeroux/jce_policy-8.zip' %}
 {%- set default_dl_opts      = '-b oraclelicense=accept-securebackup-cookie -L' %}
 
 {%- set version_name   = g.get('version_name', p.get('version_name', default_version_name)) %}
